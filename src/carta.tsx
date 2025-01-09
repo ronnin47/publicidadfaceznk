@@ -82,7 +82,6 @@ useEffect(()=>{
       newTxt="Este guerrero Jinken neutral es un combatiente hábil y adaptable, guiado por sus propios intereses más que por el bien o el mal. Su maestría en el antiguo arte del Jinken le permite aprovechar su fuerza vital para enfrentar cualquier desafío que se le presente. Con una perspectiva objetiva, actúa de acuerdo a sus convicciones y deseos, sin inclinarse hacia un lado moral específico. Este guerrero rara vez arriesga su vida por otros, pero cuando sus propios intereses están en juego, lucha con una destreza y poder insuperables, utilizando su ki para superar cualquier obstáculo que se interponga en su camino."
     break;
 
-
    //hechiero
    case "hechicero-neutral":
       newImagen = "./assets/hechi-n.jpg";
@@ -170,8 +169,6 @@ useEffect(()=>{
       newTxt="Este maestro de las sombras oscuro es la encarnación del mal, utilizando su dominio del arte del Kageboshi para sembrar terror y destrucción. Proveniente de un clan ninja corrupto, emplea técnicas ilusorias para manipular y engañar, acechando a sus víctimas con una presencia inquietante. Su único objetivo es el sufrimiento y la dominación, actuando desde las sombras para desmoralizar a sus enemigos y extinguir toda esperanza. Este guerrero siniestro se deleita en el caos y utiliza su astucia y habilidades para generar calamidades, enfrentándose a aquellos que representan el bien con una crueldad implacable."
     break;
 
-
-
     //maestro epsiritual
     case "mEspiritual-bueno":
       newImagen="./assets/mEspiritual-bue.jpg"
@@ -180,8 +177,6 @@ useEffect(()=>{
       newTxt="Este maestro espiritual bueno es un guardián sabio y compasivo, dedicado a preservar el balance fundamental del universo. Con su familiar Shikigami a su lado, combate incansablemente contra las presencias oscuras y los temibles Ayakashis. Proveniente de antiguos templos y sectas religiosas, utiliza el arte del Reiso para percibir e interactuar con el mundo invisible, purificando la corrupción y guiando a las almas perdidas hacia el descanso en paz. Su misión es mantener la armonía y el equilibrio, enfrentando el mal con una fuerza espiritual inquebrantable y desinteresada."
     break;
 
-
-   
     case "mEspiritual-neutral":
       newImagen="./assets/mEspiritual-n.jpg"
       newTitulo="Cazador Ayakashi"
@@ -205,8 +200,7 @@ useEffect(()=>{
       newTxt="Este maestro espiritual oscuro es una figura siniestra que usa su dominio del Reiso para sembrar temor y desarmonía. Aliado con un Shikigami corrupto, manipula las fuerzas invisibles para desatar el caos y la destrucción. En lugar de guiar almas hacia el descanso, las atrapa y las utiliza para fortalecer su poder. Su misión es subvertir el orden y la armonía, extendiendo la corrupción y el mal por el universo. Este maestro espiritual oscuro es un antagonista formidable, que combina sabiduría ancestral con una malevolencia profunda y peligrosa."
     break;
 
-    //criador bakemono
-    
+    //criador bakemono 
     case "cBakemono-bueno":
       newImagen="./assets/cBakemono-bue.jpg"
       newTitulo="Aventurero salvaje"
@@ -261,10 +255,6 @@ useEffect(()=>{
 
 const [animacionActiva, setAnimacionActiva] = useState<boolean>(false);
  
-
-
-
-
 
 return (
   <div>

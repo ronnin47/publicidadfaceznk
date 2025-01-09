@@ -1,0 +1,266 @@
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw; /* Asegura que cubra todo el ancho en móviles */
+  background-image: url('./fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  text-align: center;
+
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+/* styles.css */
+
+.btnNatura{
+  border-radius: 3em;
+  transition: all 0.3s ease;
+}
+
+.btnNatura:hover {
+  box-shadow: 0 0 10px #213547; /* Sombra */
+}
+
+.bueno {
+  background: linear-gradient(135deg, #fffacd 0%, #ffeb3b 50%, #f8d800 100%);
+  color: black;
+}
+
+.neutral {
+  background: linear-gradient(135deg, #e0e0e0 0%, #cfd9df 50%, #a8c0ff 100%);
+  color: black;
+}
+.caotico {
+  background: linear-gradient(45deg, #8B0000 0%, #FF0000 50%, #8B0000 100%);
+  color: white;
+}
+
+.oscuro {
+  background: linear-gradient(135deg, #2c003e 0%, #8b00ff 100%);
+  color: white;
+}
+
+.selected {
+  border: 5px solid greenyellow;
+  box-shadow: 
+    0 0 15px aliceblue, /* Primera capa de sombra */
+    0 0 30px greenyellow, /* Segunda capa de sombra */
+    0 0 45px  greenyellow, /* Tercera capa de sombra */
+    0 0 60px black; /* Cuarta capa de sombra */
+    
+}
+
+.guerrero{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.mArmas{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+
+}
+
+.mSombras{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.mEspiritual{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.hechicero{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.cBakemono{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,0.9906337535014006) 49%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+.carta {
+  border: 1em solid black!important;
+  border-radius: 15px!important;
+  box-shadow: 
+    0 0 10px aliceblue,
+    0 0 20px black,
+    0 0 30px rgba(0, 0, 0, 0.541),  /* Sombra más alejada */
+    0 0 40px black!important;  /* Sombra aún más alejada */
+  transition: box-shadow 0.3s ease-in-out!important; /* Transición suave */
+  width: '20rem'!important;
+  padding:"1px"!important;
+  height:"29em"!important; 
+
+
+
+}
+.pergamino{
+  background-color: #ECD9B0; 
+  padding: 15px; 
+}
+
+
+.textoCard{
+  font-size: 1.2em;
+  color: yellow;
+  box-shadow: 0 24px 48px rgba(176, 196, 222, 0.9); 
+  background-color: #1a1a1aa6;
+  border-radius: 1.5em;
+  width: 30em; /* Ancho fijo, puedes ajustar este valor según tus necesidades */
+  word-wrap: break-word;  
+  padding: 1em;
+
+}
+.tituloCarta{
+  font-family: fantasy;
+
+}
+
+.mensajeAp{
+  padding: 1em;
+  font-size: 1.5em;
+  color: yellow;
+  box-shadow: #1a1a1a;
+  background-color: #1a1a1aa6;
+  border-radius: 1em;
+  word-wrap: break-word; 
+}
+
+
+.orden {
+  display: grid; /* Definimos que sea un contenedor grid */
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño en pantallas grandes */
+  gap: 1rem; /* Espacio entre las columnas */
+  place-items: center; /* Centra los items en el contenedor */
+  width: 100%; /* Asegura que ocupe el ancho completo */
+}
+
+
+.texto{
+  color: black;
+  text-shadow: 
+  0 0 5px rgba(255, 0, 0, 0.8),   /* sombra difusa alrededor del texto */
+  0 0 10px rgba(255, 0, 0, 0.6),  /* sombra más amplia para más brillo */
+  0 0 15px rgba(255, 0, 0, 0.4);  /* sombra extendida para un efecto completo */
+transition: text-shadow 0.3s ease;
+font-family: impact;
+}
+
+
+@media (max-width: 768px) {
+  html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('./fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna en pantallas pequeñas */
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+    max-width: 90vw; /* Ajusta el ancho máximo para evitar desbordamientos */
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+
+  .card-container, .naturalezas-container, .dominios-container {
+    width: 100%;
+    max-width: 90vw; /* Asegura que no desborde el ancho de la pantalla */
+    margin-bottom: 1em; /* Espaciado entre secciones */
+  }
+
+  .textoCard, .mensajeAp {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+ 
+  }
+
+  button {
+    font-size: 1em;
+    padding: 0.5em 1.2em;
+  }
+
+    .carta {
+      transform: scale(0.8); /* Escala la tarjeta al 80% de su tamaño original */
+      margin: 5px; /* Reduce el margen para que se vea mejor en pantallas pequeñas */
+    }
+  
+    .imagenCarta {
+      height: 12em; /* La imagen será más pequeña en dispositivos móviles */
+    }
+  
+    .tituloCarta {
+      font-size: 1em; /* Ajusta el tamaño del título en móvil */
+    }
+  
+    .textoCarta {
+      font-size: 0.85em; /* Reduce el tamaño del texto en móviles */
+    }
+
+    .orden {
+      grid-template-columns: 1fr; /* En pantallas pequeñas, cambiar a una columna */
+      gap: 0.5rem; /* Espacio entre imagen y texto */
+    }
+ 
+}

@@ -3,22 +3,16 @@ import 'animate.css';
 import { Carta } from './carta';
 import { Naturalezas } from './naturalezas';
 import { Dominios } from './dominios';
-
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 export const App = () => {
-
   const [checkDominio, setCheckDominio] = useState<string | null>(null);
   const [checkNatura, setCheckNatura] = useState<string | null>(null);
 
   const msg = "Bienvenido a ZNK!! Combina una naturaleza y un dominio antiguo y descubrirás qué tipo de personaje puede existir en Recuerdos del Zepiro.";
   const [mensajeApertura] = useState(msg);
-
-
-
 
 
   return (
